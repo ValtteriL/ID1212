@@ -1,0 +1,15 @@
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/server/controller/Controller.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/client/net/OutputHandler.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/common/Constants.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/client/view/Cmd.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/client/view/ThreadSafeStdout.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/client/view/Interpreter.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/common/MessageException.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/server/model/Game.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/server/net/HangmanServer.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/client/controller/Controller.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/common/MsgType.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/server/net/ClientHandler.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/client/startup/Main.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/client/view/Command.java
+/home/vleh/development/ID1212/HW11/my-app/src/main/java/com/id1212/hw1/client/net/ServerConnection.java
