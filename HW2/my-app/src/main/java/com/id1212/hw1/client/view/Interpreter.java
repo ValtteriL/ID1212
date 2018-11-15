@@ -40,7 +40,7 @@ public class Interpreter implements Runnable {
                         contr.sendStart(new ConsoleOutput());
                         break;
                     case HELP:
-                        outMgr.println("\nHELP\nhelp\t\t\t\tprint this message\nconnect <host> <ip>\t\tconnect to game server\nstart\t\t\t\tstart new game/round\nguess <character or word>\tmake a guess\nstatus\t\t\t\tshow connection status\nquit\t\t\t\tquit");
+                        outMgr.println("\nHELP\nhelp\t\t\t\tprint this message\nconnect <host> <port>\t\tconnect to game server\nstart\t\t\t\tstart new game/round\nguess <character or word>\tmake a guess\nstatus\t\t\t\tshow connection status\nquit\t\t\t\tquit");
                         break;
                     case STATUS:
                         if(contr.isConnected()) {
