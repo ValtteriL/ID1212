@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.id1212.hw1.client.startup.Main",
+            "args": "",
+            "projectName": "my-app"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HangmanServer",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "com.id1212.hw1.server.net.HangmanServer",
+            "args": "",
+            "projectName": "my-app"
+        }
+    ]
+}
