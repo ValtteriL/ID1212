@@ -1,0 +1,8 @@
+/home/vleh/development/ID1212/HW3/my-app/src/main/java/com/id1212/hw3/server/controller/Controller.java
+/home/vleh/development/ID1212/HW3/my-app/src/main/java/com/id1212/hw3/server/model/Participant.java
+/home/vleh/development/ID1212/HW3/my-app/src/main/java/com/id1212/hw3/common/Credentials.java
+/home/vleh/development/ID1212/HW3/my-app/src/main/java/com/id1212/hw3/server/startup/Main.java
+/home/vleh/development/ID1212/HW3/my-app/src/main/java/com/id1212/hw3/common/CatalogClient.java
+/home/vleh/development/ID1212/HW3/my-app/src/main/java/com/id1212/hw3/server/model/ParticipantManager.java
+/home/vleh/development/ID1212/HW3/my-app/src/main/java/com/id1212/hw3/server/integration/CatalogDAO.java
+/home/vleh/development/ID1212/HW3/my-app/src/main/java/com/id1212/hw3/common/CatalogServer.java
