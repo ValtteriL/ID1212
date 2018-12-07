@@ -1,0 +1,16 @@
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/domain/Conversion.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/presentation/acct/CurrencyCreateForm.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/presentation/acct/ConversionController.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/application/BankService.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/domain/ConversionDTO.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/domain/CurrencyDTO.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/repository/ConversionRepository.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/presentation/acct/CurrencyModifyForm.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/presentation/error/ExceptionHandlers.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/config/BankConfig.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/presentation/acct/ConversionForm.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/repository/CurrencyRepository.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/domain/Currency.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/domain/BeanFactory.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/presentation/acct/AdminController.java
+/home/vleh/development/ID1212/HW4/src/main/java/se/kth/id1212/appserv/bank/Main.java

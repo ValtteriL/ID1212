@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{resources/fragments/layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<body>
+    <main layout:fragment="content">
+
+        <section>
+            <h1>Convert</h1>
+            <p class="info">Convert from currency to another</p>
+            <form th:action="@{/convert}" th:object="${convertForm}" method="post">
+                <p class="form"><label for="currency-from">From</label>:
+                    <input list="browsers" th:field="*{from}" id="currency-from">
+                    <datalist id="browsers">
+                        <option th:each="currency : ${currencyAlternatives}" th:value="${currency.name}">
+                    </datalist>
+                    <span class="error" th:if="${#fields.hasErrors('from')}" th:errors="*{from}">Currency Error</span></p>
+                <p class="form"><label for="currency-to">To</label>:
+                    <input list="browsers" th:field="*{to}" id="currency-to">
+                    <datalist id="browsers">
+                        <option th:each="currency : ${currencyAlternatives}" th:value="${currency.name}">
+                    </datalist>
+                    <span class="error" th:if="${#fields.hasErrors('to')}" th:errors="*{to}">Currency Error</span></p>
+                <p class="form"><label for="amount">Amount</label>:<input type="text" th:field="*{amount}" id="amount" />
+                    <span class="error" th:if="${#fields.hasErrors('amount')}" th:errors="*{amount}">Amount Error</span></p>
+                <p>Result: <span th:text="${conversionResult}">Nothing yet!</span></p>
+                <p class="submit"><input type="submit" value="Convert" /></p>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>

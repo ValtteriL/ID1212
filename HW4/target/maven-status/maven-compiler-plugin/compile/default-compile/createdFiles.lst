@@ -1,0 +1,15 @@
+se/kth/id1212/appserv/bank/repository/CurrencyRepository.class
+se/kth/id1212/appserv/bank/presentation/error/ExceptionHandlers.class
+se/kth/id1212/appserv/bank/domain/BeanFactory.class
+se/kth/id1212/appserv/bank/domain/ConversionDTO.class
+se/kth/id1212/appserv/bank/presentation/acct/ConversionController.class
+se/kth/id1212/appserv/bank/domain/CurrencyDTO.class
+se/kth/id1212/appserv/bank/presentation/acct/CurrencyCreateForm.class
+se/kth/id1212/appserv/bank/config/BankConfig.class
+se/kth/id1212/appserv/bank/presentation/acct/CurrencyModifyForm.class
+se/kth/id1212/appserv/bank/domain/Currency.class
+se/kth/id1212/appserv/bank/presentation/acct/ConversionForm.class
+se/kth/id1212/appserv/bank/domain/Conversion.class
+se/kth/id1212/appserv/bank/presentation/acct/AdminController.class
+se/kth/id1212/appserv/bank/Main.class
+se/kth/id1212/appserv/bank/repository/ConversionRepository.class

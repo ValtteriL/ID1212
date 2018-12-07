@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{resources/fragments/layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<body>
+    <main layout:fragment="content">
+
+        <section>
+            <h1>There have been <span th:text="${conversions}">Nothing yet!</span> conversions using this calculator.</h1>
+        </section>
+
+        <section>
+            <h1>Currencies</h1>
+            <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Worth in gold</th>
+                </tr>
+                <tr th:if="${currencyAlternatives.empty}">
+                    <td colspan="2"> There are no currencies! </td>
+                </tr>
+                <tr th:each="currency : ${currencyAlternatives}">
+                  <td><span th:text="${currency.name}"> placeholder </span></td>
+                  <td><span th:text="${currency.worthInGold}"> placeholder </span></td>
+                </tr>
+              </table>
+        </section>
+
+        <section>
+            <h1>Add currency</h1>
+            <p class="info">Please enter currency details</p>
+            <form th:action="@{/add}" th:object="${addCurrencyForm}" method="post">
+                <p class="form"><label for="currencyName">Currency name</label>:<input type="text" th:field="*{currency}"
+                        id="currencyName" />
+                    <span class="error" th:if="${#fields.hasErrors('currency')}" th:errors="*{currency}">Name
+                        Error
+                    </span></p>
+                <p class="form"><label for="worth">Worth in gold</label>:<input type="text" th:field="*{amount}" id="worth" />
+                    <span class="error" th:if="${#fields.hasErrors('amount')}" th:errors="*{amount}">Worth Error</span></p>
+                <p class="submit"></p><input type="submit" value="Add currency" />
+                </p>
+            </form>
+        </section>
+
+        <section>
+            <h1>Modify currency</h1>
+            <p class="info">Please enter new worth for currency</p>
+            <form th:action="@{/modify}" th:object="${modifyCurrencyForm}" method="post">
+                <p class="form"><label for="currencyName">Currency name</label>:
+                    <input list="browsers" th:field="*{currency}" id="currencyName">
+                    <datalist id="browsers">
+                        <option th:each="currency : ${currencyAlternatives}" th:value="${currency.name}">
+                    </datalist>
+                    <span class="error" th:if="${#fields.hasErrors('currency')}" th:errors="*{currency}">Name error</span></p>
+                <p class="form"><label for="worth">Worth in gold</label>:<input type="text" th:field="*{amount}" id="worth" />
+                    <span class="error" th:if="${#fields.hasErrors('amount')}" th:errors="*{amount}">Worth Error</span></p>
+                <p class="submit"><input type="submit" value="Modify" /></p>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
