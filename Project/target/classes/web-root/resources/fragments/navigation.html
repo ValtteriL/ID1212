@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Title</title>
+</head>
+
+<body>
+    <nav th:fragment="navigation">
+        <ul>
+            <li><a th:href="@{/}">Chat</a></li>
+
+            <!-- show navbar items depending on login state -->
+            <li sec:authorize="!isAuthenticated()"><a th:href="@{/login}">Login</a></li>
+            <li sec:authorize="!isAuthenticated()"><a th:href="@{/register}">Register</a></li>
+            <li sec:authorize="isAuthenticated()"><a onclick="document.getElementById('logoutform').submit()">Logout</a></li>
+
+            <form id="logoutform" th:action="@{/logout}" method="post">
+                <input type="hidden" value="Sign Out"/>
+            </form>
+        </ul>
+    </nav>
+</body>
+
+</html>

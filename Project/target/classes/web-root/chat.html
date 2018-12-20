@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{resources/fragments/layout}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+</head>
+
+
+<body>
+    <main layout:fragment="content">
+        <section>
+            <h1>Chat</h1>
+            <p class="info">Chat with other users</p>
+
+            <!-- area where conversation gets added -->
+            <div class="conversation" id="conversationarea">
+            </div>
+
+            <!-- form to write and send messages -->
+            <form>
+                <textarea name="message" id="messagetextbox" rows="2" cols="60" maxlength="600"></textarea>
+                <button type="button" id="sendbtn">Send</button>
+            </form>
+            
+            <!-- chat functionality -->
+            <script th:src="@{/resources/js/chat.js}"></script>
+        </section>
+    </main>
+</body>
+
+</html>

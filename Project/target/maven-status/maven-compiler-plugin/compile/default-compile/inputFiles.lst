@@ -1,0 +1,17 @@
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/config/AuthenticationConfig.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/Model/Message.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/Model/WebsocketErrormessage.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/Model/LoginMessage.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/Application.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/Controller/WebSocketController.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/Integration/UserRepository.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/config/ConversionConfig.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/Integration/MyUserPrincipal.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/Integration/MyAccountService.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/Model/LogoutMessage.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/Integration/MyUserDetailsService.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/Model/User.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/config/MvcConfig.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/Controller/AccountController.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/Controller/AccountCreateForm.java
+/home/vleh/development/ID1212/Project/src/main/java/se/kth/id1212/appserv/conversion/config/WebSocketConfiguration.java
