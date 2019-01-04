@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.GameActivity"
+    tools:showIn="@layout/activity_game">
+
+    <TextView
+        android:id="@+id/attempField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/scoreField"
+        app:layout_constraintTop_toBottomOf="@+id/scoreField" />
+
+    <TextView
+        android:id="@+id/scoreField2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="87dp"
+        android:text="Score:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/stateField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusField"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/attempField1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Attemps:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/scoreField2"
+        app:layout_constraintTop_toBottomOf="@+id/scoreField2" />
+
+    <TextView
+        android:id="@+id/scoreField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="87dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/stateField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusField" />
+
+    <TextView
+        android:id="@+id/stateField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="27dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/guessField"
+        app:layout_constraintStart_toStartOf="@+id/guessField"
+        app:layout_constraintTop_toBottomOf="@+id/scoreField" />
+
+    <TextView
+        android:id="@+id/statusField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="24dp"
+        android:text="Connecting"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scoreField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/statusField2"
+        android:layout_width="77dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="24dp"
+        android:text="Status:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scoreField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/guessField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/guessButton"
+        app:layout_constraintEnd_toEndOf="@+id/guessButton"
+        app:layout_constraintTop_toBottomOf="@+id/stateField" />
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="224dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="false"
+        android:enabled="true"
+        android:text="Guess"
+        app:layout_constraintBottom_toTopOf="@+id/disconnectButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessField" />
+
+    <Button
+        android:id="@+id/disconnectButton"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="28dp"
+        android:text="Disconnect"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startButton" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="13dp"
+        android:text="New game"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/disconnectButton"
+        app:layout_constraintEnd_toStartOf="@+id/disconnectButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
